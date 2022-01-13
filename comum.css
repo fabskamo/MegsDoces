@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/fundo.jpg);
+    background-image: url(img/fundoclaro.jpeg);
     background-size: cover;
     color: white;
     margin: 0;
@@ -20,7 +20,7 @@ a {
     color: rgb(255, 253, 253);
     text-decoration: none;
     font-weight: bold;
-    margin: 0.5em;
+    margin: 2em;
 }
 
 h2 {
@@ -45,6 +45,7 @@ h1+h2 {
 #cabecalho ul {
     background-color: rgba(77, 51, 34, 1);
     margin-top: 0px;
+    height: 100px;
 }
 
 #menu-de-navegacao ul {
@@ -53,11 +54,12 @@ h1+h2 {
     padding-left: 0;
 }
 
-ul li {
+#cabecalho ul li {
     display: inline-block;
     padding-top: 1%;
     padding-bottom: 1%;
     min-width: 150px;
+    height: 30px;
 }
 
 #logo {
@@ -67,4 +69,48 @@ ul li {
     position: absolute;
     top: 0px;
     margin-left: -100px;
+}
+
+
+/* --- Conteúdo principal da página --- */
+
+#conteudo-principal {
+    padding-left: 2.5%;
+    transition: opacity 1s linear;
+    padding-bottom: 3em;
+    margin-top: 150px;
+}
+
+#posts-principais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.borda {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+/* --- Rodapé --- */
+
+#rodape {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 1em;
+    display: flex;
+    margin-top: 60px;
+}
+
+#rodape .logo-rodape {
+    margin-right: 2em;
+}
+
+#rodape ul li {
+    display: inline-block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    min-width: 150px;
 }
